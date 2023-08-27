@@ -72,7 +72,7 @@ def update():
 
         print(output.decode("utf-8"))
     except subprocess.CalledProcessError as e:
-        print(e.output)
+        print(e.output.decode("utf-8"))
 
 
 def get_ydl_options(request_options):

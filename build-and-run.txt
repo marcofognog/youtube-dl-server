@@ -1,0 +1,2 @@
+docker build -t youtube-dl-local-build .
+docker run -d --net=host --name youtube-dl-local-build -v ./youtube-dl:/youtube-dl docker.io/library/youtube-dl-local-build
